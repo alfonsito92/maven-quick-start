@@ -1,13 +1,12 @@
-package crps.maven.test;
+package crps.maven.tutorial;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.apache.commons.lang3.StringUtils;
 
 public class Application {
 
 	public int countWords(String words){
-		String[] separateWords = StringUtils.split(words, ' ');
+		String[] separateWords = words.split(" ");
 		return (separateWords == null) ? 0: separateWords.length;
 	}
 
@@ -32,7 +31,6 @@ public class Application {
 
 		app.greet();
 
-		System.out.println("Word Count: " + app.countWords("I have four words"));
+		System.out.println("Word Count: " + app.countWords("· palabras hay"));
 	}
-
 }
